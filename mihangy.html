@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=div, initial-scale=1.0">
+    <script src="https://unpkg.com/vue@next"></script>
+    <title>VUE JS 3</title>
+</head>
+<body> 
+<div id="app">{{ message }}</div>
+<script>
+  const { createApp, ref } = Vue
+
+  createApp({
+    data() {
+      const message = ref('Tsipongo Mihangy!')
+      return {
+        message
+      }
+    }
+  }).mount('#app')
+</script>
+</body>
+</html>
